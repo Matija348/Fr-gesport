@@ -37,5 +37,44 @@
             Console.WriteLine("Fel! Rätt svar är 2: Blåval.");
         }
 
+// Fråga 3
+        Console.WriteLine("\nFråga 3: Vad heter Sveriges kung?");
+        Console.WriteLine("1: Carl XVI Gustaf");
+        Console.WriteLine("2: Carl XII");
+        Console.WriteLine("3: Carl IX");
+        string svar3 = Console.ReadLine();
 
+        if (svar3 == "1")
+        {
+            Console.WriteLine("Rätt!");
+            poäng++;
+        }
+        else
+        {
+            Console.WriteLine("Fel! Rätt svar är 1: Carl XVI Gustaf.");
+        }
 
+        // Resultat
+        Console.WriteLine($"\nDu fick {poäng} av 3 rätt!");
+
+        // Anpassat meddelande beroende på poäng
+        if (poäng == 3)
+        {
+            Console.WriteLine("Perfekt! Du fick alla rätt!");
+        }
+        else if (poäng == 2)
+        {
+            Console.WriteLine("Bra jobbat! Du fick 2 av 3 rätt.");
+        }
+        else if (poäng == 1)
+        {
+            Console.WriteLine("Inte dåligt! Du fick 1 av 3 rätt.");
+        }
+        else
+        {
+            Console.WriteLine("Bättre lycka nästa gång! Du fick inga rätt.");
+        }
+    }
+}
+
+Console.ReadLine
